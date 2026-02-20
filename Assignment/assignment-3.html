@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Button</title>
+    <style>
+      body {
+        background: white;
+        margin: 0;
+      }
+      main {
+        height: 100vh;
+        width: 99vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+      }
+      main div {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 10px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+      }
+      main div div {
+        width: 132px;
+        height: 132px;
+        background: transparent;
+        border-radius: 50%;
+        border: 10px solid purple;
+      }
+
+      section {
+        height: 100vh;
+        width: 99vw;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section div {
+        width: 132px;
+        height: 132px;
+        background: yellow;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div><div></div></div>
+    </main>
+    <section><div>hello</div></section>
+    <section><div style="background-color: blueviolet">hello</div></section>
+    <section><div style="background-color: green">hello</div></section>
+  </body>
+</html>

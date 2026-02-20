@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern Design</title>
+    <style>
+      body {
+        margin: 10px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section{
+                border: 1px solid black;
+
+      }
+      section > div {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 200px);
+        position: relative;
+        border: 1px solid black;
+      }
+      section > div > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section > div > div:nth-child(1) {
+        background-color: red;
+
+      }
+      section > div > div:nth-child(2) {
+        background-color: green;
+      }
+      section > div > div:nth-child(3) {
+        background-color: orange;
+      }
+      section > div > div:nth-child(4) {
+        background-color: deeppink;
+      }
+
+      section > div > div > div {
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section > div > div > div > div {
+        width: 40px;
+        height: 40px;
+        background: red;
+      }
+      section > div > div:nth-child(5) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+      }
+      section > div > div:nth-child(5) div {
+        width: 50px;
+        height: 50px;
+        background: red;
+        border-radius: 50%;
+      }
+      section > div > div:nth-child(6) {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        z-index: 1;
+        top: -50px;
+        left: -50px;
+      }
+      section > div > div:nth-child(7) {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        z-index: 1;
+        top: -50px;
+        right: -50px;
+      }
+      section > div > div:nth-child(8) {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        z-index: 1;
+        bottom: -50px;
+        left: -50px;
+      }
+      section > div > div:nth-child(9) {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        z-index: 1;
+        bottom: -50px;
+        right: -50px;
+      }
+      section > div > div:nth-child(10) {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        z-index: 1;
+        top: -50px;
+        right: 150px;
+      }
+      section > div > div:nth-child(11) {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        z-index: 1;
+        bottom: -50px;
+        right: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div>
+          <div>
+            <div><div></div></div>
+          </div>
+          <div>
+            <div><div></div></div>
+          </div>
+          <div>
+            <div><div></div></div>
+          </div>
+          <div>
+            <div><div></div></div>
+          </div>
+          <div><div></div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Headers</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      section {
+        height: 100vh;
+        width: 100vw;
+        background-color: lightgray;
+        padding: 0;
+      }
+      section h1 {
+        position: sticky;
+        top: 0;
+        margin: 0;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        z-index: 10;
+      }
+      section p {
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        padding-top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="background-color: aqua">
+      <h1>Card 1</h1>
+      <p>Hello</p>
+    </section>
+    <section style="background-color: coral">
+      <h1 style="background-color: blue">Card 2</h1>
+      <p>Hello</p>
+    </section>
+    <section style="background-color: lightblue">
+      <h1 style="background-color: darkblue">Card 3</h1>
+      <p>Hello</p>
+    </section>
+  </body>
+</html>
